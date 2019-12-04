@@ -5,4 +5,8 @@ Practice Code for Various C++ language features
 
 In the first directory there is code on C++ templates.
 
+The sub directory /basics contains code on the basics of templates. 
+
 ## C++ practical programming
+
+Exercises from **Accelerated C++ Practical Programming by Example**
