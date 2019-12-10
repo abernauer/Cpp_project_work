@@ -16,3 +16,16 @@ define data structures and operations on those data structures. C++ has two kind
 are a mechanism for grouping related names. Names from the standard library are defined in the namespace _std_.
 
 
+# String literals
+begin and end with double quotes ("); each string literal must appear entirely on one line of the program.
+
++ ```\n ``` newline character
++ ```\t ``` tab character
++ ```\b``` backspace character
++ ```\"``` treats this symbol as part of the string rather than as the string terminator
++ ```\'``` same meaning as ' in string literals, for consistency with character literals
++ ```\\``` includes a \ in the string, treating the next character as an ordinary character
+
+# Definitions and headers:
+Every name in a C++ program uses must have a corresponding definition. You STL defines its names in headers which are accessable through ``` #include ```.
+Names must be defined before they are used i.e. they must follow a ```#include``` The <iostream> header defines the library's input-output facilites.
