@@ -27,5 +27,5 @@ begin and end with double quotes ("); each string literal must appear entirely o
 + ```\\``` includes a \ in the string, treating the next character as an ordinary character
 
 # Definitions and headers:
-Every name in a C++ program uses must have a corresponding definition. You STL defines its names in headers which are accessable through ``` #include ```.
-Names must be defined before they are used i.e. they must follow a ```#include``` The <iostream> header defines the library's input-output facilites.
+Every name in that a C++ program uses must have a corresponding definition. The STL defines its names in headers which are accessable through ``` #include ```.
+Names must be defined before they are used i.e. they must follow a ```#include```. The ```<iostream>``` header defines the library's input-output facilites.
