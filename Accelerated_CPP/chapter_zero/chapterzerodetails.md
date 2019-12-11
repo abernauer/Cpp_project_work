@@ -33,4 +33,13 @@ Names must be defined before they are used i.e. they must follow a ```#include``
 # The main function:
 Every C++ program must define exactly one function, named *main*, that returns an *int*. The implementation runs the program by calling *main*. A zero return from *main* means indicates success; a nonzero return indicates failure. In general, functions must inlcude atleast one *return* statement and are not permitted to fall off the end of the function. The *main* function is special: It may omit the return: if it does so, the implementation will assume a zero return value. However, explicitly including a return from *main* is good practice.
 
-#
+# Braces and semicolons:
+
+These incospicuous symbols are import in C++ programs. They are easy to overlook because they are small, and they are important because forgetting one typically evokes compiler diagnostic messages that may be hard to understand.
+
+A sequence of zero or more statements enclosed in braces is a statement, called a *block*. which is a request to execute the constituent statements in the order in which they appear. The statements between a pair of matching braces constitute a scope.
+
+An expression followed by a statement is a statement. called an *expression statement*, which is a request to execute the expression for its side effects and discard its result. The expression is optional; omitting if results in *null statement*. which has no effect.
+
+# Output 
+Evaluating std::cout << e writes the value of e on the standard-output stream, and yields std::cout, which has type *ostream*, as its value in order to allow chained output operations.
