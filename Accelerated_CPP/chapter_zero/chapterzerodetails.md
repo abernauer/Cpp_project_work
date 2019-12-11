@@ -29,3 +29,8 @@ begin and end with double quotes ("); each string literal must appear entirely o
 # Definitions and headers:
 Every name in that a C++ program uses must have a corresponding definition. The STL defines its names in headers which are accessable through ``` #include ```.
 Names must be defined before they are used i.e. they must follow a ```#include```. The ```<iostream>``` header defines the library's input-output facilites.
+
+# The main function:
+Every C++ program must define exactly one function, named *main*, that returns an *int*. The implementation runs the program by calling *main*. A zero return from *main* means indicates success; a nonzero return indicates failure. In general, functions must inlcude atleast one *return* statement and are not permitted to fall off the end of the function. The *main* function is special: It may omit the return: if it does so, the implementation will assume a zero return value. However, explicitly including a return from *main* is good practice.
+
+#
