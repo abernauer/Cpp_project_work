@@ -25,12 +25,21 @@ can be defined in one of three ways:
 
 ```c++
 
+std::string hello = "Hello"; // define the variable with an explicit value
 
+std::string stars(100, '*'); // construct the variable
+                             // according to its type and the given expressions
+
+std::string name;            // define the variable with an implicit initialization
+                             // which depends on its type
+			     
 ```
+Variables defined inside a pair of curly braces are local variables, which exist only while executing the part of the program within the braces. When the implementation reaches the }, it destroys the variables, and returns any memory that they occupied to the system.
 
+Defining a variable as **const** promises that the variable's value will not change during its lifetime. Such a variable must be initialized as part of its definition, because there is no way to do so later.
 
 # Input:
-
+Executing std::cin >> v discards any whitespace characters in the standard input stream, then reads from the standard input into variable v. It returns std::cin, which has type istream, in order to allow chained input operations.
 
 
 
