@@ -25,7 +25,8 @@ size_t Unsigned integral type (from <cstddef>) that can hold any object's size
 string::size_type  Unsigned integral type that can hold the size of any string
 
 # Half open ranges
+include one but not both of their endpoints. For example, [1, 3) includes 1 and 2, but not 3.
 
 # Condition:
-
+An expression that yields a truth value. Arithmetic values used in conditions are converted to bool:Nonzero values convert to true; zero values convert to false.
 # Statements: 
