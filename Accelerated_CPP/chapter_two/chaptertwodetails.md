@@ -17,6 +17,12 @@ Operands will be converted to the appropriate type when possible. Numeric operan
 
 
 # Types:
+bool    Built-in type representing truth values; may be either true or false
+unsigned Integral type that contains only non-negative values
+short  Integral type that must hold at least 16 bits
+long   Integral type that must hold at least 32 bits
+size_t Unsigned integral type (from <cstddef>) that can hold any object's size
+string::size_type  Unsigned integral type that can hold the size of any string
 
 # Half open ranges
 
