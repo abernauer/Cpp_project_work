@@ -17,12 +17,12 @@ Operands will be converted to the appropriate type when possible. Numeric operan
 
 
 # Types:
-bool    Built-in type representing truth values; may be either true or false
-unsigned Integral type that contains only non-negative values
-short  Integral type that must hold at least 16 bits
-long   Integral type that must hold at least 32 bits
-size_t Unsigned integral type (from <cstddef>) that can hold any object's size
-string::size_type  Unsigned integral type that can hold the size of any string
+```c++ bool ```    Built-in type representing truth values; may be either true or false
+```c++ unsigned ``` Integral type that contains only non-negative values
+```c++ short ```  Integral type that must hold at least 16 bits
+```c++ long ```   Integral type that must hold at least 32 bits
+```c++ size_t ``` Unsigned integral type (from <cstddef>) that can hold any object's size
+```c++ string::size_type```  Unsigned integral type that can hold the size of any string
 
 # Half open ranges
 include one but not both of their endpoints. For example, [1, 3) includes 1 and 2, but not 3.
