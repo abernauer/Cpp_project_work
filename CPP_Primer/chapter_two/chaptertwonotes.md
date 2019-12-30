@@ -42,3 +42,9 @@ There are several character types, most of which exist to support internationali
 The remaining character types--wchar_t, char16_t, and char32_t-- are used for extended character sets. Th wchar_t type is guaranteed to be large enough to hold any character in the machine's largest extennded character set.
 
 The remaining integral types represent integer values of(potentially) different sizes. The language guarantees that an int will be at least as large as short, a long at least as large as an int, and long long at least as large as long.
+
+## Signed and Unsigned Types
+
+Except for _bool_ and the extended character types, the integral types may be _signed_ or _unsigned_ . A signed type represents negative or positive numbers (including zero); an unsigned type represents only values greater than or equal to zero.
+
+The types _int_, _short_, _long_, and _long long_ are all signed. We obtain the corresponding unsigned type by adding _unsigned_ to the type, such as _unsigned long_. The type _unsigned int_ may be abbreviated as _unsigned_. 
