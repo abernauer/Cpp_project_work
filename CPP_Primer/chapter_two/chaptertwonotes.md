@@ -58,3 +58,24 @@ The types _int_, _short_, _long_, and _long long_ are all signed. We obtain the 
 + Do not use plain char or bool in arithmetic expressions. Use them only to hold characters or truth values. Computations using char are especially problematic because char is signed on some machines and unsigned on others. If you need a tiny integer, explicitly specify either signed char or unsigned char.
 
 + Use double for floating-point computations; float usually does not have enough precision, and the cost of double-precision calculations versus single-precision is negligible. In fact, on some machines, double-precision operations are faster than single. The precision offered by long double usually is unnecessary and often entails considerable run-time cost.
+
+## 2.1.2 Type Conversions
+
+The type of an object defines the data that an object might contain and what operations that object can perform. Among the operations that many types support is the ability to _convert_ objects of the given type to other, related types.
+
+Type conversions happen automatically when we use an object of one type where an object of another type is expected.
+
+When we assign one arithmetic type to another:
+
+```c++
+
+bool b = 42; // b is true
+int i = b;  // i has value 1
+i = 3.14;  // i has value 3
+double pi = i; // pi has value 3.0
+unsigned char c = -1; // assuming 8-bit chars, c has value 255
+signed char c2 = 256; // assuming 8-bit chars, the value of c2 is undefined
+
+```
+
+what happens depends on the range of the values that the types permit:
