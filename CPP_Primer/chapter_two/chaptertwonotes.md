@@ -79,3 +79,15 @@ signed char c2 = 256; // assuming 8-bit chars, the value of c2 is undefined
 ```
 
 what happens depends on the range of the values that the types permit:
+
++ When we assign one of the nonbool arithmetic types to a _bool_ object, the reslt is false if the value is 0 and true otherwise.
+
++ When we assign a bool to one of the other arithmetic types, the resulting value is 1 if the bool is true and 0 if the bool is false.
+
++ When we assign a floating-point value to an object of integral type, the value is truncated. The value that is stored is the part before the decimal point.
+
++ When we assign an integral value to an object of floating-point type, the fractional part is zero. Precision may be lost if the integer has more bits than the floating-point object can accommodate.
+
++ If we assign an out-of-range value to an object of unsigned type, the result is the remainder of the value modulo the number of values the target type can hold. For example, an 8-bit unsigned char can hold values from 0 through 255, inclusive. If we assign a value outside this range, the compiler assigns the remainder of that value modulo 256. Therefore, assigning -1 to an 8-bit unsigned char gives that object the value 255.
+
++ If we assign an out-of-range value to an object of signed type, the result is _undefined_. The program might appear to work, it migt crash, or it might produc garbage values. 
