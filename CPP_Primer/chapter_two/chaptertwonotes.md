@@ -47,4 +47,14 @@ The remaining integral types represent integer values of(potentially) different 
 
 Except for _bool_ and the extended character types, the integral types may be _signed_ or _unsigned_ . A signed type represents negative or positive numbers (including zero); an unsigned type represents only values greater than or equal to zero.
 
-The types _int_, _short_, _long_, and _long long_ are all signed. We obtain the corresponding unsigned type by adding _unsigned_ to the type, such as _unsigned long_. The type _unsigned int_ may be abbreviated as _unsigned_. 
+The types _int_, _short_, _long_, and _long long_ are all signed. We obtain the corresponding unsigned type by adding _unsigned_ to the type, such as _unsigned long_. The type _unsigned int_ may be abbreviated as _unsigned_.
+
+## Advice on type selection
+
++ Use an unsigned type when you know that the values cannot be negative.
+
++ Use int for integer arithmetic, short is usually too small and, in practice, long often has the same size as int. If your data values are larger than the minimum guaranteed size of an int, then use long long.
+
++ Do not use plain char or bool in arithmetic expressions. Use them only to hold characters or truth values. Computations using char are especially problematic because char is signed on some machines and unsigned on others. If you need a tiny integer, explicitly specify either signed char or unsigned char.
+
++ Use double for floating-point computations; float usually does not have enough precision, and the cost of double-precision calculations versus single-precision is negligible. In fact, on some machines, double-precision operations are faster than single. The precision offered by long double usually is unnecessary and often entails considerable run-time cost.
