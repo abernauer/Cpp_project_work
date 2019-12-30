@@ -37,4 +37,8 @@ The size of-- that is, the number of bit in-- the arithmetic types varies across
 | long double | extended-precision floating-point | 10 significant digits |
 
 
+There are several character types, most of which exist to support internationalization. The basic character type is _char_. A _char_ is guaranteed to be big enough to hold numeric values corresponding to the characters in the machine's basic character set. That is, a _char_ is the same size as a single machine byte.
 
+The remaining character types--wchar_t, char16_t, and char32_t-- are used for extended character sets. Th wchar_t type is guaranteed to be large enough to hold any character in the machine's largest extennded character set.
+
+The remaining integral types represent integer values of(potentially) different sizes. The language guarantees that an int will be at least as large as short, a long at least as large as an int, and long long at least as large as long.
