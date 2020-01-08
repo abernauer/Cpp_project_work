@@ -90,4 +90,4 @@ what happens depends on the range of the values that the types permit:
 
 + If we assign an out-of-range value to an object of unsigned type, the result is the remainder of the value modulo the number of values the target type can hold. For example, an 8-bit unsigned char can hold values from 0 through 255, inclusive. If we assign a value outside this range, the compiler assigns the remainder of that value modulo 256. Therefore, assigning -1 to an 8-bit unsigned char gives that object the value 255.
 
-+ If we assign an out-of-range value to an object of signed type, the result is _undefined_. The program might appear to work, it migt crash, or it might produc garbage values. 
++ If we assign an out-of-range value to an object of signed type, the result is _undefined_. The program might appear to work, it might crash, or it might produce garbage values. 
